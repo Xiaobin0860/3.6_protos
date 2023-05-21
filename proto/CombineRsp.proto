@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "ItemParam.proto";
+
+// CmdId: 606
+// Name: GFKHDFNBKIC
+message CombineRsp {
+  uint64 avatar_guid = 13;
+  uint32 combine_count = 6;
+  uint32 combine_id = 7;
+  int32 retcode = 2;
+  repeated ItemParam total_return_item_list = 9;
+  repeated ItemParam cost_item_list = 3;
+  repeated ItemParam total_random_item_list = 12;
+  repeated ItemParam total_extra_item_list = 11;
+  repeated ItemParam result_item_list = 10;
+}

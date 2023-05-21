@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// Name: ELCAKMDGIBA
+message GCGFestivalDetailInfo { bool OOLFCFMNBOJ = 15; }

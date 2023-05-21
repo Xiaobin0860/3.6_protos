@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// CmdId: 635
+// Name: IPAGBGMDOJL
+message ItemCdGroupTimeNotify { map<uint32, uint64> item_cd_map = 7; }

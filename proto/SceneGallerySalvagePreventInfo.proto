@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// Name: DGJLMEDKNEO
+message SceneGallerySalvagePreventInfo { uint32 monster_count = 5; }

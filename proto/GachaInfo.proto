@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "GachaUpInfo.proto";
+
+// Name: INCDGNIDDAE
+message GachaInfo {
+  uint32 wishMaxProgress = 578;                  // FBILBJNNIKE
+  uint32 tenCostItemId = 9;                      // ok
+  uint32 costItemId = 7;                         // ok
+  string gachaPreviewPrefabPath = 3;             // ok
+  uint32 curScheduleDailyGachaTimes = 316;       // ok
+  uint32 begin_time = 1;                         // ok
+  uint32 gachaSortId = 4;                        // ok
+  uint32 end_time = 10;                          // ok
+  uint32 gachaTimesLimit = 12;                   // ok
+  string titleTextmap = 908;                     // ok
+  uint32 costItemNum = 11;                       // ok
+  uint32 schedule_id = 13;                       // ok
+  uint32 wishItemId = 2003;                      // KKDFKKEMEBA
+  string gachaProbUrlOversea = 883;              // ok
+  string gachaProbUrl = 15;                      // ok
+  repeated GachaUpInfo gacha_up_info_list = 771; // ok
+  string gachaRecordUrl = 8;                     // ok
+  string gachaRecordUrlOversea = 1371;           // ok
+  repeated uint32 displayUp5ItemList = 793;      // ok
+  bool is_new_wish = 1748;                       // ok
+  uint32 gachaType = 6;                          // ok
+  uint32 tenCostItemNum = 5;                     // ok
+  uint32 leftGachaTimes = 14;                    // ok
+  uint32 wishProgress = 1986;                    // ok? KDFPKENAIOJ
+  repeated uint32 displayUp4ItemList = 565;      // ok
+  string gachaPrefabPath = 2;                    // ok
+}

@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// Name: IKHBGFEGGFD
+message IKHBGFEGGFD { uint32 OCEKEOCKCFH = 8; }

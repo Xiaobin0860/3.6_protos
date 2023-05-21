@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// CmdId: 99
+// Name: IEJMFHELPOE
+message ClientReportNotify {
+  string report_value = 8;
+  string report_type = 5;
+}

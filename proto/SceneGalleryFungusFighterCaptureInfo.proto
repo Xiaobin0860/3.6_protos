@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// Name: MDOHOGEIKFA
+message SceneGalleryFungusFighterCaptureInfo { bool is_hide_progress = 2; }

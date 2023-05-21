@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// Name: EODBPMNMPEJ
+message EODBPMNMPEJ { uint32 difficulty = 12; }

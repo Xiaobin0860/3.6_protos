@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// Name: MIIHOLHIIFN
+message MIIHOLHIIFN { repeated uint32 data = 15; }

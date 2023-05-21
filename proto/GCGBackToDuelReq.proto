@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// CmdId: 7339
+// Name: NAHAENAHEDO
+message GCGBackToDuelReq { bool is_back = 12; }
