@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -9,8 +10,8 @@ import "Vector.proto";
 message ToTheMoonQueryPathRsp {
   // Name: OICDHCHDIAF
   enum PathStatusType {
-    STATUS_FAIL = 0;
-    STATUS_SUCC = 1;
+    STATUS_FAIL    = 0;
+    STATUS_SUCC    = 1;
     STATUS_PARTIAL = 2;
   }
 

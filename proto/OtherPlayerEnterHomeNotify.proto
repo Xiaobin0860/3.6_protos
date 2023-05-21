@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -7,15 +8,15 @@ option java_package = "emu.grasscutter.net.proto";
 message OtherPlayerEnterHomeNotify {
   // Name: PFLMKOGOKAI
   enum Reason {
-    PLAYER_JUDGE = 0;
-    PLAYER_ENTER_OPTION_REFUSE = 1;
-    PLAYER_ENTER_OPTION_DIRECT = 2;
-    SYSTEM_JUDGE = 3;
-    HOST_IN_MATCH = 4;
+    PLAYER_JUDGE                = 0;
+    PLAYER_ENTER_OPTION_REFUSE  = 1;
+    PLAYER_ENTER_OPTION_DIRECT  = 2;
+    SYSTEM_JUDGE                = 3;
+    HOST_IN_MATCH               = 4;
     PS_PLAYER_NOT_ACCEPT_OTHERS = 5;
-    OPEN_STATE_NOT_OPEN = 6;
-    HOST_IN_EDIT_MODE = 7;
-    PRIOR_CHECK = 8;
+    OPEN_STATE_NOT_OPEN         = 6;
+    HOST_IN_EDIT_MODE           = 7;
+    PRIOR_CHECK                 = 8;
   }
 
   string nickname = 10;

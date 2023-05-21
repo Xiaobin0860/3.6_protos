@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -6,9 +7,9 @@ option java_package = "emu.grasscutter.net.proto";
 message BattlePassMission {
   // Name: NONPHMMOCDO
   enum MissionStatus {
-    MISSION_INVALID = 0;
-    MISSION_UNFINISHED = 1;
-    MISSION_FINISHED = 2;
+    MISSION_INVALID     = 0;
+    MISSION_UNFINISHED  = 1;
+    MISSION_FINISHED    = 2;
     MISSION_POINT_TAKEN = 3;
   }
 

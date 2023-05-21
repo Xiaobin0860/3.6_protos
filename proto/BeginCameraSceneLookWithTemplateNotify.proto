@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -9,8 +10,8 @@ import "Vector.proto";
 message BeginCameraSceneLookWithTemplateNotify {
   // Name: IGEOPIOCKBE
   enum FollowType {
-    FOLLOW_TYPE_INIT_FOLLOW_POS = 0;
-    FOLLOW_TYPE_SET_FOLLOW_POS = 1;
+    FOLLOW_TYPE_INIT_FOLLOW_POS    = 0;
+    FOLLOW_TYPE_SET_FOLLOW_POS     = 1;
     FOLLOW_TYPE_SET_ABS_FOLLOW_POS = 2;
   }
 

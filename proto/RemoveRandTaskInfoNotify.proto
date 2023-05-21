@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -7,10 +8,10 @@ option java_package = "emu.grasscutter.net.proto";
 message RemoveRandTaskInfoNotify {
   // Name: HIIPJHPPCOE
   enum FinishReason {
-    DEFAULT = 0;
-    CLEAR = 1;
+    DEFAULT  = 0;
+    CLEAR    = 1;
     DISTANCE = 2;
-    FINISH = 3;
+    FINISH   = 3;
   }
 
   uint32 rand_task_id = 4;

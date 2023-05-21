@@ -1,9 +1,10 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
 // Name: GGFHCGIAFOI
 enum ClientReconnectReason {
-  CLIENT_RECONNNECT_NONE = 0;
+  CLIENT_RECONNNECT_NONE    = 0;
   CLIENT_RECONNNECT_QUIT_MP = 1;
 }

@@ -1,9 +1,10 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
 // Name: DGDNJFDLBNB
 enum InterOpType {
   INTER_OP_FINISH = 0;
-  INTER_OP_START = 1;
+  INTER_OP_START  = 1;
 }

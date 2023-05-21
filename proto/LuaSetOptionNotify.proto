@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -7,7 +8,7 @@ option java_package = "emu.grasscutter.net.proto";
 message LuaSetOptionNotify {
   // Name: GFPJDFDBMKJ
   enum LuaOptionType {
-    LUA_OPTION_NONE = 0;
+    LUA_OPTION_NONE         = 0;
     LUA_OPTION_PLAYER_INPUT = 1;
   }
 

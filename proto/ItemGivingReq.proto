@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -9,7 +10,7 @@ import "ItemParam.proto";
 message ItemGivingReq {
   // Name: KIHMMCOKBOG
   enum ItemGivingType {
-    QUEST = 0;
+    QUEST  = 0;
     GADGET = 1;
   }
 

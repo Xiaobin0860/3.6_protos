@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -11,8 +12,8 @@ import "Vector3Int.proto";
 message QueryPathReq {
   // Name: GFGAGCEANNG
   enum OptionType {
-    OPTION_NONE = 0;
-    OPTION_NORMAL = 1;
+    OPTION_NONE         = 0;
+    OPTION_NORMAL       = 1;
     OPTION_FIRST_CAN_GO = 2;
   }
 

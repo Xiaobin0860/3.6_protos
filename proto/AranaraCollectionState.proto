@@ -1,11 +1,12 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
 // Name: OMEFMODIDAM
 enum AranaraCollectionState {
-  ARANARA_COLLECTION_STATE_NONE = 0;
+  ARANARA_COLLECTION_STATE_NONE        = 0;
   ARANARA_COLLECTION_STATE_COLLECTABLE = 1;
-  ARANARA_COLLECTION_STATE_COLLECTED = 2;
-  ARANARA_COLLECTION_STATE_FINISHED = 3;
+  ARANARA_COLLECTION_STATE_COLLECTED   = 2;
+  ARANARA_COLLECTION_STATE_FINISHED    = 3;
 }

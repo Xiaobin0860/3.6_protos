@@ -1,11 +1,12 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
 // Name: DPDLJODAKKL
 enum ChallengeFinishType {
-  CHALLENGE_FINISH_TYPE_NONE = 0;
-  CHALLENGE_FINISH_TYPE_FAIL = 1;
-  CHALLENGE_FINISH_TYPE_SUCC = 2;
+  CHALLENGE_FINISH_TYPE_NONE  = 0;
+  CHALLENGE_FINISH_TYPE_FAIL  = 1;
+  CHALLENGE_FINISH_TYPE_SUCC  = 2;
   CHALLENGE_FINISH_TYPE_PAUSE = 3;
 }

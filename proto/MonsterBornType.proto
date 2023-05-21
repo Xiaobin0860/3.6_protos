@@ -1,10 +1,11 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
 // Name: PKKAPIFAEHB
 enum MonsterBornType {
-  MONSTER_BORN_NONE = 0;
+  MONSTER_BORN_NONE    = 0;
   MONSTER_BORN_DEFAULT = 1;
-  MONSTER_BORN_RANDOM = 2;
+  MONSTER_BORN_RANDOM  = 2;
 }

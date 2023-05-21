@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -8,8 +9,8 @@ message ServerUpdateGlobalValueNotify {
   // Name: CFLHPGFIDBE
   enum UpdateType {
     INVALUE = 0;
-    ADD = 1;
-    SET = 2;
+    ADD     = 1;
+    SET     = 2;
   }
 
   uint32 entity_id = 15;

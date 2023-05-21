@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -7,7 +8,7 @@ option java_package = "emu.grasscutter.net.proto";
 message RegionSearchChangeRegionNotify {
   // Name: PMMIIFMHPDP
   enum RegionEvent {
-    REGION_EVENT_NONE = 0;
+    REGION_EVENT_NONE  = 0;
     REGION_EVENT_ENTER = 1;
     REGION_EVENT_LEAVE = 2;
   }

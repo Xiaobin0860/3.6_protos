@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -9,7 +10,7 @@ import "Vector.proto";
 message PerformOperationNotify {
   // Name: DPGKAGJABPH
   enum OperateType {
-    OPERATE_TYPE_NONE = 0;
+    OPERATE_TYPE_NONE   = 0;
     OPERATE_TYPE_EFFECT = 1;
   }
 

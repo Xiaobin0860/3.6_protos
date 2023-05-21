@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -10,10 +11,10 @@ import "ItemParam.proto";
 message FishBattleEndRsp {
   // Name: BAOFMDDOHHC
   enum FishNoRewardReason {
-    FISH_NO_REWARD_NONE = 0;
+    FISH_NO_REWARD_NONE           = 0;
     FISH_NO_REWARD_ACTIVITY_LIMIT = 1;
-    FISH_NO_REWARD_BAG_LIMIT = 2;
-    FISH_NO_REWARD_POOL_LIMIT = 3;
+    FISH_NO_REWARD_BAG_LIMIT      = 2;
+    FISH_NO_REWARD_POOL_LIMIT     = 3;
   }
 
   bool is_got_reward = 7;

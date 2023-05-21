@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -9,7 +10,7 @@ import "ItemParam.proto";
 message TowerLevelEndNotify {
 
   enum ContinueStateType {
-    CONTINUE_STATE_CAN_NOT_CONTINUE = 0;
+    CONTINUE_STATE_CAN_NOT_CONTINUE     = 0;
     CONTINUE_STATE_CAN_ENTER_NEXT_LEVEL = 1;
     CONTINUE_STATE_CAN_ENTER_NEXT_FLOOR = 2;
   }

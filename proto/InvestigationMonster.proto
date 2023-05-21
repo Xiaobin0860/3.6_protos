@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -9,7 +10,7 @@ import "WeeklyBossResinDiscountInfo.proto";
 message InvestigationMonster {
   // Name: ENEAGILHBCC
   enum LockState {
-    LOCK_NONE = 0;
+    LOCK_NONE  = 0;
     LOCK_QUEST = 1;
   }
 

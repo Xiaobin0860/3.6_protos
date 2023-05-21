@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -12,13 +13,13 @@ import "BreakoutSyncSnapShot.proto";
 message AbilityMixinBreakout {
   // Name: ACIFCBGMPPK
   enum SyncType {
-    SYNC_TYPE_NONE = 0;
+    SYNC_TYPE_NONE           = 0;
     SYNC_TYPE_CREATE_CONNECT = 1;
-    SYNC_TYPE_START_GAME = 2;
-    SYNC_TYPE_PING = 3;
-    SYNC_TYPE_FINISH_GAME = 4;
-    SYNC_TYPE_SNAP_SHOT = 5;
-    SYNC_TYPE_ACTION = 6;
+    SYNC_TYPE_START_GAME     = 2;
+    SYNC_TYPE_PING           = 3;
+    SYNC_TYPE_FINISH_GAME    = 4;
+    SYNC_TYPE_SNAP_SHOT      = 5;
+    SYNC_TYPE_ACTION         = 6;
   }
 
   int32 retcode = 13;

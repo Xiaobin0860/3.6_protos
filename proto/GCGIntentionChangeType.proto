@@ -1,9 +1,10 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
 // Name: IMHJJIEFMOF
 enum GCGIntentionChangeType {
   GCG_INTENTION_CHANGE_NONE = 0;
-  GCG_INTENTION_CHANGE_RM = 1;
+  GCG_INTENTION_CHANGE_RM   = 1;
 }

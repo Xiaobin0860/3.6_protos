@@ -1,12 +1,13 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
 // Name: KBMBFAGBEII
 enum RogueCellState {
-  ROGUE_CELL_NONE = 0;
-  ROGUE_CELL_BATTLE = 1;
-  ROGUE_CELL_SUCCESS = 2;
-  ROGUE_CELL_FINISH = 3;
+  ROGUE_CELL_NONE        = 0;
+  ROGUE_CELL_BATTLE      = 1;
+  ROGUE_CELL_SUCCESS     = 2;
+  ROGUE_CELL_FINISH      = 3;
   ROGUE_CELL_TAKEN_CHEST = 4;
 }

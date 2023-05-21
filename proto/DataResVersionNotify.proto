@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -9,8 +10,8 @@ import "ResVersionConfig.proto";
 message DataResVersionNotify {
   // Name: NIAIEPJFONE
   enum DataResVersionOpType {
-    OP_TYPE_NONE = 0;
-    OP_TYPE_RELOGIN = 1;
+    OP_TYPE_NONE       = 0;
+    OP_TYPE_RELOGIN    = 1;
     OP_TYPE_MP_RELOGIN = 2;
   }
 

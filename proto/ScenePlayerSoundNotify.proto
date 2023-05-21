@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -9,9 +10,9 @@ import "Vector.proto";
 message ScenePlayerSoundNotify {
   // Name: GONLGHGGMDM
   enum PlaySoundType {
-    PLAY_SOUND_NONE = 0;
+    PLAY_SOUND_NONE  = 0;
     PLAY_SOUND_START = 1;
-    PLAY_SOUND_STOP = 2;
+    PLAY_SOUND_STOP  = 2;
   }
 
   string sound_name = 11;

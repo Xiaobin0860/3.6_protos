@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -8,11 +9,11 @@ import "BreakoutVector2.proto";
 message BreakoutAction {
   // Name: OIEFFFMMFLE
   enum BreakoutActionType {
-    ACTION_TYPE_NONE = 0;
-    ACTION_TYPE_LAUNCH_BALL = 1;
-    ACTION_TYPE_DESTROY_BALL = 2;
+    ACTION_TYPE_NONE           = 0;
+    ACTION_TYPE_LAUNCH_BALL    = 1;
+    ACTION_TYPE_DESTROY_BALL   = 2;
     ACTION_TYPE_FALLING_OBJECT = 3;
-    ACTION_TYPE_MISSILE = 4;
+    ACTION_TYPE_MISSILE        = 4;
   }
 
   BreakoutActionType action_type = 1;

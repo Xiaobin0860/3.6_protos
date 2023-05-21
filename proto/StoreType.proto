@@ -1,10 +1,11 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
 // Name: MPBJOANOMOJ
 enum StoreType {
-  STORE_NONE = 0;
-  STORE_PACK = 1;
+  STORE_NONE  = 0;
+  STORE_PACK  = 1;
   STORE_DEPOT = 2;
 }

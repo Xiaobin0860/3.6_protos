@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -10,7 +11,7 @@ message ToTheMoonObstacleInfo {
   // Name: MNENMABCJHH
   enum ShapeType {
     OBSTACLE_SHAPE_CAPSULE = 0;
-    OBSTACLE_SHAPE_BOX = 1;
+    OBSTACLE_SHAPE_BOX     = 1;
   }
 
   int32 handle_id = 8;

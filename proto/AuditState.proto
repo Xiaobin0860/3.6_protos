@@ -1,10 +1,11 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
 // Name: GBHPBGNKCEE
 enum AuditState {
-  AUDIT_NONE = 0;
+  AUDIT_NONE    = 0;
   AUDIT_WAITING = 1;
-  AUDIT_FAILED = 2;
+  AUDIT_FAILED  = 2;
 }

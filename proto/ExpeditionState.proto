@@ -1,12 +1,13 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
 // Name: MKKHEKAJHKN
 enum ExpeditionState {
-  EXPEDITION_NONE = 0;
-  EXPEDITION_STARTED = 1;
+  EXPEDITION_NONE     = 0;
+  EXPEDITION_STARTED  = 1;
   EXPEDITION_FINISHED = 2;
   EXPEDITION_REWARDED = 3;
-  EXPEDITION_LOCKED = 4;
+  EXPEDITION_LOCKED   = 4;
 }

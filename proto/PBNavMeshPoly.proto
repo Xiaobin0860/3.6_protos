@@ -1,4 +1,5 @@
 syntax = "proto3";
+option go_package = "./;client_proto";
 
 option java_package = "emu.grasscutter.net.proto";
 
@@ -6,10 +7,10 @@ option java_package = "emu.grasscutter.net.proto";
 message PBNavMeshPoly {
   // Name: PJKEMGMCEFM
   enum EdgeType {
-    INNER = 0;
-    TILE_BOUND = 1;
+    INNER                = 0;
+    TILE_BOUND           = 1;
     TILE_BOUND_UNCONNECT = 2;
-    TILE_BOUND_OVERIDE = 3;
+    TILE_BOUND_OVERIDE   = 3;
   }
 
   repeated EdgeType edge_types = 8;
