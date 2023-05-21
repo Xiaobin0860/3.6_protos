@@ -6,10 +6,9 @@ option java_package = "emu.grasscutter.net.proto";
 message InvestigationTarget {
   // Name: OJMGAAEJHAD
   enum State {
-    INVALID = 0;
-    IN_PROGRESS = 1;
-    COMPLETE = 2;
-    REWARD_TAKEN = 3;
+    STATE_UNSTARTED = 0;
+    STATE_STARTED = 1;
+    STATE_FINISHED = 2;
   }
 
   uint32 investigation_id = 3;

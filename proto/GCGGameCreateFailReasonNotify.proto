@@ -12,7 +12,6 @@ message GCGGameCreateFailReasonNotify {
     REASON_CLIENT_VERSION_NOT_LASTEST = 2;
     REASON_RESOURCE_NOT_COMPLETE = 3;
     REASON_TIMEOUT = 4;
-    REASON_OPPONENT_CLIENT_VERSION_NOT_LASTEST = 5;
   }
 
   GCGGameCreateReason reason = 11;

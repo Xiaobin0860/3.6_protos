@@ -6,9 +6,9 @@ option java_package = "emu.grasscutter.net.proto";
 message CoopReward {
   // Name: BCDLKPCNHJH
   enum State {
-    STATE_UNLOCK = 0;
-    STATE_LOCK = 1;
-    STATE_TAKEN = 2;
+    STATE_UNSTARTED = 0;
+    STATE_STARTED = 1;
+    STATE_FINISHED = 2;
   }
 
   uint32 id = 9;

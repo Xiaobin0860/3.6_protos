@@ -11,6 +11,7 @@ message ToTheMoonQueryPathReq {
   enum OptionType {
     OPTION_NONE = 0;
     OPTION_NORMAL = 1;
+    OPTION_FIRST_CAN_GO = 2;
   }
 
   // Name: OILPBFMHGMF

@@ -7,9 +7,9 @@ option java_package = "emu.grasscutter.net.proto";
 message PlayerPreEnterMpNotify {
   // Name: MCNOPMHCNHC
   enum State {
-    INVALID = 0;
-    START = 1;
-    TIMEOUT = 2;
+    STATE_UNSTARTED = 0;
+    STATE_STARTED = 1;
+    STATE_FINISHED = 2;
   }
 
   uint32 uid = 4;

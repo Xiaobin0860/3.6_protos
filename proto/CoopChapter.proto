@@ -10,10 +10,9 @@ import "CoopReward.proto";
 message CoopChapter {
   // Name: PCFKFLMMDHE
   enum State {
-    STATE_CLOSE = 0;
-    STATE_COND_NOT_MEET = 1;
-    STATE_COND_MEET = 2;
-    STATE_ACCEPT = 3;
+    STATE_UNSTARTED = 0;
+    STATE_STARTED = 1;
+    STATE_FINISHED = 2;
   }
 
   uint32 finished_end_count = 4;

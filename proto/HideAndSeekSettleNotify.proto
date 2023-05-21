@@ -13,6 +13,7 @@ message HideAndSeekSettleNotify {
     SETTLE_REASON_TIME_OUT = 0;
     SETTLE_PLAY_END = 1;
     SETTLE_PLAYER_QUIT = 2;
+    SETTLE_LIFE_COUNT = 3;
   }
 
   repeated HideAndSeekSettleInfo settle_info_list = 5;

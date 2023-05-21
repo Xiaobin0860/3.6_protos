@@ -7,8 +7,9 @@ message MainCoop {
   // Name: PPHCOKFGLOL
   enum Status {
     INVALID = 0;
-    RUNNING = 1;
+    UNFINISHED = 1;
     FINISHED = 2;
+    REWARD_TAKEN = 3;
   }
 
   map<uint32, int32> JFNGFEFMHMM = 5;
